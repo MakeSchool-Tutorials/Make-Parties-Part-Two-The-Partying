@@ -211,9 +211,9 @@ Once someone is logged in, they shouldn't see the Login and Sign Up links anymor
 
 ```html
 {{#if currentUser}}
-<!-- login and sign up links -->
-{{else}}
 <!-- link to my profile '/me' -->
+{{else}}
+<!-- login and sign up links -->
 {{/if}}
 ```
 
