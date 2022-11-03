@@ -186,7 +186,7 @@ Let's go one step further and get a `currentUser` object in memory that we can r
 Let's add this custom middleware to your middleware in `app.js`.
 
 ```js
-app.use(req, res, next => {
+app.use((req, res, next) => {
   // if a valid JWT token is present
   if (req.user) {
     // Look up the user's record
